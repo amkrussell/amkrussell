@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#head{
+	background-color:lightseagreen;
+	text-align: center;
+}
+#nav{
+	color:navy; 
+	font-size:20px;
+	background-color:lightpink;
+} 
+#section{
+	background-color:linen;
+  	display: block;
+  	width:  100%;
+}
+#foot{
+	background-color: lightseagreen;
+	font-size: 20px;
+	text-align: center;
+}
+</style>
+<title>Data on the Web Class Exercise</title>
+</head>
+
+<div id="head">
+<h2>HTML & CSS Exercise</h2>
+<h3 id="name"></h3>
+
+<script>
+const a = "Annette";
+const b = "Nakshbendi";
+
+function myFunction3() {
+	document.getElementById("name").innerHTML = a +" "+ b
+} //I can't get this section to work
+</script>
+
+<script>
+window.alert("Welcome to my intro page!");
+</script>
+
+</head>
+<body>
+
+<button type="button" onclick="myFunction1()">Change pink section header</button>
+
+<script>
+function myFunction1() {
+  document.getElementById("resources").innerHTML = "Reference List";
+}
+
+function myFunction2() {
+	document.getElementById("interests").innerHTML = "Hobbies:";
+}
+</script>
+
+<script>
+document.write("<p>this is a test of document.write</p>");
+</script>
+</div>
+
+<div id="nav">
+	<p id="resources"><strong>Coding Resources Used:</strong></p>
+<ul  list-style-type: none;><a href="https://www.tutorialspoint.com/Build-a-Vertical-Navigation-Bar-with-CSS">Tutorials Point</a></ul>
+<ul>W3C Schools <a href="https://www.w3schools.com/html/">HTML</a> & <a href="https://www.w3schools.com/css/">CSS</a> Tutorials</ul>
+
+<button type="button" onclick="myFunction3()">Display my name</button> 
+<script>
+/* when I press this button, I would like my name to appear above the visible exercise title */
+</script>
+
+</div>
+
+<div id="section">
+<p>Hi, Everyone! I apologize again for missing many of your intros today and look forward to reading your written versions on Blackboard.</p>
+<p>As I mentioned, I am a former Elementary school Social Studies teacher (2nd/3rd grade) with an interest in helping teachers bring more digital tools and resources into the classroom. I believe bringing technology into more Humanities lesson plans will engage students who may have dreaded reading/writing-heavy classes. Also, the important skills of data analysis and visualization apply across school subjects (and life!), even for young learners. I hope to make the development of such skills less intimidating for teachers and students who don't feel particularly "tech-savvy" themselves. In pursuit of this goal, I am on a Generalist track, trying to take a variety of School Library Media and Data Science courses.</p>
+<p id ="interests">My personal interests include:</p>
+<button type="button" onclick="myFunction2()">Change title of bulleted list</button>
+	<ul>
+		<li>jigsaw puzzles</li>
+		<li>cooking (if it's not too complicated)</li>
+		<li>reading (especially historical fiction)</li>
+		<li>TV shows (also historical, or crime-based--I highly recommend <a href="https://www.netflix.com/title/80074249">The Last Kingdom</a> on Netflix)
+		<li>taking long walks outside (especially with my <em>almost</em> one-year-old son!)</li>
+	</ul>
+	</div>
+<div id="foot">
+<p>I look forward to working with you all this semester!</p>
+</div>
+</p>
+</html>
